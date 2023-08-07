@@ -1,0 +1,193 @@
+.scrolly-container {
+  position: relative;
+}
+
+.sticky-thing {
+  position: -webkit-sticky; /* Google Chrome */
+  position: sticky;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 0;
+  top: 0;
+  min-height: 100vh;
+  /* Center everything inside */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 80%;
+}
+
+.video-container {
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100%;
+}
+
+.sticky-thing iframe {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+.steps-container {
+  position: relative;
+  padding-top: 0;
+  z-index: 10;
+  max-width: 35rem;
+  margin: 0 auto;
+  padding-bottom: 4em;
+}
+
+.step {
+  margin: auto;
+  margin-top: 0%;
+  margin-bottom: 10rem;
+  color: #3f025ae7;
+  background-color: #ffffffc5;
+  font-weight: normal;
+  font-size: 18px;
+  padding-top: auto;
+}
+
+#step2 {
+  padding: auto;
+  padding-top: auto;
+  margin-top: auto;
+}
+
+#step3 {
+  padding: auto;
+  padding-top: auto;
+  margin-top: auto;
+}
+
+#gif {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.step p {
+  text-align: center;
+  padding: 1rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* When it's less than 700 pixels wide, do normal scrollytelling */
+
+@media only screen and (min-width: 700px) {
+  #scrolly.side-by-side {
+    display: flex;
+  }
+
+  #scrolly.side-by-side > div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75em;
+  }
+
+  #scrolly.side-by-side .scrolly-overlay {
+    margin-top: 70vh;
+    order: 0;
+    /* Change these to adjust sizing options */
+    min-width: 15rem;
+    max-width: 20rem;
+  }
+
+  #scrolly.side-by-side .sticky-thing {
+    order: 1;
+    flex-grow: 2;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Battle Magic Personal', sans-serif;
+  font-size: 1.05em;
+  background: #c4c3c666;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.title-content {
+  padding: 0px;
+  padding-top: 0%;
+  margin-top: auto;
+  font-family: 'Super Fuggy', sans-serif;
+  font-size: 30px;
+  color: #c988f766;
+  letter-spacing: 5px;
+  text-shadow: 0 0 0.5px gray, 0 0 0.5px gray, 0 0 0.5px gray, 0 0 0.5px gray; 
+}
+
+.pic1 {
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.pic2 {
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  size-adjust: 100%;
+  margin-bottom: 100px;
+}
+
+.pic3 {
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  size-adjust: 100%;
+  margin-bottom: 0px;
+}
+
+
+.intro {
+  margin: 0 auto;
+  font-family: 'Battle Magic Personal', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #3f025ae7;
+  padding-top: 0px;
+  text-align: center;
+  /* text-shadow: 0 0 0.5px gray, 0 0 0.5px gray, 0 0 0.5px gray, 0 0 0.5px gray; */
+}
+
+.body-text {
+  text-align: justify;
+  max-width: 700px;
+  margin: auto;
+}
+
+p {
+  margin-bottom: 2em;
+  line-height: 1.5;
+  word-spacing: 0px;
+}
